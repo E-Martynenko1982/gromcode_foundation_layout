@@ -7,6 +7,54 @@
   height: 338px;
   width: 1140px;
   margin: 0 auto;
+  display: flex;
+}
+.footer .footer-navigation .about-company {
+  margin-top: 44px;
+}
+.footer .footer-navigation .about-company .footer__description {
+  width: 360px;
+  height: 85px;
+  margin-top: 26px;
+  margin-bottom: 25px;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 26px;
+}
+.footer .footer-navigation .about-company .downloads {
+  margin-top: 25px;
+}
+.footer .footer-navigation .about-company .downloads .downloads__item {
+  margin-right: 10px;
+}
+.footer .footer-navigation .additional-navigation {
+  display: flex;
+  margin-top: 60px;
+  margin-left: auto;
+}
+.footer .footer-navigation .additional-navigation .additional-navigation__column {
+  margin-right: 29px;
+}
+.footer .footer-navigation .additional-navigation .nav-links {
+  width: 265px;
+}
+.footer .footer-navigation .additional-navigation .nav-links .nav-links__title {
+  color: #2b292d;
+  font-size: 22px;
+  font-weight: 700;
+  line-height: 28px;
+  margin: 0;
+}
+.footer .footer-navigation .additional-navigation .nav-links .nav-links__list {
+  margin: 0;
+  padding: 0;
+  margin-top: 18px;
+  list-style: none;
+  color: #2b292d;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 30px;
+  opacity: 0.6;
 }
 .footer .footer-line {
   border-top: 0.5px solid #2b292d;
@@ -18,11 +66,29 @@
   height: 50px;
   width: 1140px;
   margin: 0 auto;
+  display: flex;
+  align-items: center;
 }
-.footer .footer-links .footer-navigation__items {
+.footer .footer-links .terms {
+  line-height: 50px;
+  font-size: 14px;
+}
+.footer .footer-links .terms .terms__items {
   text-decoration: none;
-  margin: 0 auto;
-  width: 1140px;
+  margin-right: 22px;
+  color: #2b292d;
+  opacity: 0.6;
+}
+.footer .footer-links .social-links {
+  margin-left: auto;
+}
+.footer .footer-links .social-links .social-links__item {
+  text-decoration: none;
+  margin-left: 20px;
+}
+.footer .footer-links .social-links .social-links__item_twitter {
+  width: 21px;
+  height: 16px;
 }
 
 .header {
