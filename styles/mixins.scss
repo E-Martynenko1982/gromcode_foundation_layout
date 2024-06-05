@@ -1,6 +1,8 @@
 @mixin custom-button {
   width: 160px;
   height: 48px;
+  border: none;
+  border-radius: 2px;
   background-color: $color-background-blue;
   color: $color-text-white;
   text-align: center;

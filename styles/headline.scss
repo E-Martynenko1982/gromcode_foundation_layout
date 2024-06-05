@@ -1,0 +1,62 @@
+.headline {
+  position: relative;
+  display: flex;
+  width: 1140px;
+  margin: auto;
+  padding-bottom: 77px;
+  margin-top: 84px;
+  .headline__content {
+    position: absolute;
+    z-index: 1;
+    .headline__title {
+      width: 754px;
+      height: 165px;
+      font-size: 80px;
+      font-weight: 700;
+      line-height: 78px;
+      letter-spacing: -0.5px;
+      color: $color-description;
+      z-index: 1;
+      margin: 0;
+    }
+
+    .headline__description {
+      margin-top: 34px;
+      margin-bottom: 0;
+      width: 456px;
+      height: 102px;
+
+      font-size: 24px;
+      font-weight: 400;
+      line-height: 34px;
+      color: $color-description;
+
+      z-index: 1;
+    }
+
+    .headline__actions {
+      margin-top: 58px;
+      display: flex;
+      .headline__button-1 {
+        @include custom-button;
+        margin-right: 10px;
+      }
+
+      .headline__button {
+        @include custom-button;
+        width: 158px;
+        background-color: $color-text-white;
+        color: $color-background-blue;
+      }
+    }
+  }
+
+  .headline__banner {
+    width: 796px;
+    height: 448px;
+    position: relative;
+    right: -105px;
+    top: 0;
+    margin-left: auto;
+  }
+}

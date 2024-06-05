@@ -150,12 +150,89 @@
 .header .header__button {
   width: 160px;
   height: 48px;
+  border: none;
+  border-radius: 2px;
   background-color: #3040c4;
   color: #ffffff;
   text-align: center;
   line-height: 13px;
   font-weight: 700;
   font-size: 18px;
+}
+
+.headline {
+  position: relative;
+  display: flex;
+  width: 1140px;
+  margin: auto;
+  padding-bottom: 77px;
+  margin-top: 84px;
+}
+.headline .headline__content {
+  position: absolute;
+  z-index: 1;
+}
+.headline .headline__content .headline__title {
+  width: 754px;
+  height: 165px;
+  font-size: 80px;
+  font-weight: 700;
+  line-height: 78px;
+  letter-spacing: -0.5px;
+  color: #2b292d;
+  z-index: 1;
+  margin: 0;
+}
+.headline .headline__content .headline__description {
+  margin-top: 34px;
+  margin-bottom: 0;
+  width: 456px;
+  height: 102px;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 34px;
+  color: #2b292d;
+  z-index: 1;
+}
+.headline .headline__content .headline__actions {
+  margin-top: 58px;
+  display: flex;
+}
+.headline .headline__content .headline__actions .headline__button-1 {
+  width: 160px;
+  height: 48px;
+  border: none;
+  border-radius: 2px;
+  background-color: #3040c4;
+  color: #ffffff;
+  text-align: center;
+  line-height: 13px;
+  font-weight: 700;
+  font-size: 18px;
+  margin-right: 10px;
+}
+.headline .headline__content .headline__actions .headline__button {
+  width: 160px;
+  height: 48px;
+  border: none;
+  border-radius: 2px;
+  background-color: #3040c4;
+  color: #ffffff;
+  text-align: center;
+  line-height: 13px;
+  font-weight: 700;
+  font-size: 18px;
+  width: 158px;
+  background-color: #ffffff;
+  color: #3040c4;
+}
+.headline .headline__banner {
+  width: 796px;
+  height: 448px;
+  position: relative;
+  right: -105px;
+  top: 0;
+  margin-left: auto;
 }
 
 * {
