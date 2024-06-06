@@ -1,0 +1,24 @@
+.about {
+  width: 1140px;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  .article {
+    padding-top: 77px;
+    padding-bottom: 76px;
+    width: 555px;
+    .article__title {
+      font-size: 22px;
+      line-height: 32px;
+      color: $color-description;
+    }
+    .article__text {
+      margin-top: 6px;
+      margin-bottom: 0;
+      font-size: 22px;
+      line-height: 32px;
+      color: $color-description;
+      opacity: 0.6;
+    }
+  }
+}
