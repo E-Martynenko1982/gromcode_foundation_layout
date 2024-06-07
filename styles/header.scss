@@ -1,11 +1,11 @@
 .header {
-  display: flex;
-
-  width: 1140px;
-  height: 62px;
-  margin: auto;
+  height: 64px;
+  width: 100%;
+  padding-left: 15px;
+  background-color: $background-color-header-mobile;
   .logo {
     display: flex;
+
     .logo__image {
       width: 60px;
       height: 60px;
@@ -16,25 +16,21 @@
       display: flex;
       flex-direction: column;
       justify-content: center;
+
       .logo__name {
         font-size: 20px;
         line-height: 25px;
         font-weight: 700;
       }
+
       .logo__description {
-        font-size: 18px;
-        line-height: 25px;
-        font-weight: 400;
-        opacity: 0.6;
-        color: $color-description;
+        display: none;
       }
     }
   }
 
   .navigation {
-    margin-top: 7px;
-    margin-left: auto;
-    margin-right: 75px;
+    display: none;
 
     .navigation__item {
       color: $color-description;
@@ -62,6 +58,33 @@
   }
 
   .header__button {
+    display: none;
     @include custom-button;
+  }
+  @media screen and (min-width: 400px) {
+    .header {
+      display: flex;
+      width: 1140px;
+      height: 62px;
+      margin: auto;
+    }
+    .navigation {
+      display: block;
+      margin-top: 7px;
+      margin-left: auto;
+      margin-right: 75px;
+    }
+    .header__button {
+      display: block;
+      @include custom-button;
+    }
+    .logo__description {
+      display: block;
+      font-size: 18px;
+      line-height: 25px;
+      font-weight: 400;
+      opacity: 0.6;
+      color: $color-description;
+    }
   }
 }

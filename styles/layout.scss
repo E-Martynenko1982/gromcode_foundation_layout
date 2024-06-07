@@ -17,13 +17,22 @@ html {
 }
 
 .page {
-  width: 1400px;
-  margin: auto;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
+  width: 100%;
+  overflow-x: hidden;
   .top-section {
     background-color: $color-background-main;
-    padding-top: 39px;
+  }
+  @media screen and (min-width: 400px) {
+    .page {
+      width: 1400px;
+      margin: auto;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
+    .top-section {
+      background-color: $color-background-main;
+      padding-top: 39px;
+    }
   }
 }

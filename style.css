@@ -92,10 +92,10 @@
 }
 
 .header {
-  display: flex;
-  width: 1140px;
-  height: 62px;
-  margin: auto;
+  height: 64px;
+  width: 100%;
+  padding-left: 15px;
+  background-color: #fff;
 }
 .header .logo {
   display: flex;
@@ -116,16 +116,10 @@
   font-weight: 700;
 }
 .header .logo .logo__text .logo__description {
-  font-size: 18px;
-  line-height: 25px;
-  font-weight: 400;
-  opacity: 0.6;
-  color: #2b292d;
+  display: none;
 }
 .header .navigation {
-  margin-top: 7px;
-  margin-left: auto;
-  margin-right: 75px;
+  display: none;
 }
 .header .navigation .navigation__item {
   color: #2b292d;
@@ -148,6 +142,7 @@
   background-image: url("https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson24/hw1/arrow.png");
 }
 .header .header__button {
+  display: none;
   width: 160px;
   height: 48px;
   border: none;
@@ -158,6 +153,41 @@
   line-height: 13px;
   font-weight: 700;
   font-size: 18px;
+}
+@media screen and (min-width: 400px) {
+  .header .header {
+    display: flex;
+    width: 1140px;
+    height: 62px;
+    margin: auto;
+  }
+  .header .navigation {
+    display: block;
+    margin-top: 7px;
+    margin-left: auto;
+    margin-right: 75px;
+  }
+  .header .header__button {
+    display: block;
+    width: 160px;
+    height: 48px;
+    border: none;
+    border-radius: 2px;
+    background-color: #3040c4;
+    color: #ffffff;
+    text-align: center;
+    line-height: 13px;
+    font-weight: 700;
+    font-size: 18px;
+  }
+  .header .logo__description {
+    display: block;
+    font-size: 18px;
+    line-height: 25px;
+    font-weight: 400;
+    opacity: 0.6;
+    color: #2b292d;
+  }
 }
 
 .headline {
@@ -366,15 +396,24 @@ html {
 }
 
 .page {
-  width: 1400px;
-  margin: auto;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
+  width: 100%;
+  overflow-x: hidden;
 }
 .page .top-section {
   background-color: #f3c6bd;
-  padding-top: 39px;
+}
+@media screen and (min-width: 400px) {
+  .page .page {
+    width: 1400px;
+    margin: auto;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+  }
+  .page .top-section {
+    background-color: #f3c6bd;
+    padding-top: 39px;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
