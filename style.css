@@ -91,57 +91,57 @@
   height: 16px;
 }
 
-.header {
+.page .top-section .header {
   height: 64px;
   width: 100%;
   padding-left: 15px;
   background-color: #fff;
 }
-.header .logo {
+.page .top-section .header .logo {
   display: flex;
 }
-.header .logo .logo__image {
+.page .top-section .header .logo .logo__image {
   width: 60px;
   height: 60px;
   margin-right: 15px;
 }
-.header .logo .logo__text {
+.page .top-section .header .logo .logo__text {
   display: flex;
   flex-direction: column;
   justify-content: center;
 }
-.header .logo .logo__text .logo__name {
+.page .top-section .header .logo .logo__text .logo__name {
   font-size: 20px;
   line-height: 25px;
   font-weight: 700;
 }
-.header .logo .logo__text .logo__description {
+.page .top-section .header .logo .logo__text .logo__description {
   display: none;
 }
-.header .navigation {
+.page .top-section .header .navigation {
   display: none;
 }
-.header .navigation .navigation__item {
+.page .top-section .header .navigation .navigation__item {
   color: #2b292d;
   text-decoration: none;
   line-height: 25px;
   font-size: 18px;
   margin-right: 50px;
 }
-.header .navigation .nav-list__item-selected {
+.page .top-section .header .navigation .nav-list__item-selected {
   font-weight: 700;
 }
-.header .navigation .navigation__item:last-child {
+.page .top-section .header .navigation .navigation__item:last-child {
   margin-right: 0;
 }
-.header .navigation .navigation__arrow {
+.page .top-section .header .navigation .navigation__arrow {
   display: inline-block;
   width: 8px;
   height: 5px;
   margin-left: 11px;
   background-image: url("https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson24/hw1/arrow.png");
 }
-.header .header__button {
+.page .top-section .header .header__button {
   display: none;
   width: 160px;
   height: 48px;

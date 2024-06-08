@@ -1,64 +1,68 @@
-.header {
-  height: 64px;
-  width: 100%;
-  padding-left: 15px;
-  background-color: $background-color-header-mobile;
-  .logo {
-    display: flex;
+.page {
+  .top-section {
+    .header {
+      height: 64px;
+      width: 100%;
+      padding-left: 15px;
+      background-color: $background-color-header-mobile;
+      .logo {
+        display: flex;
 
-    .logo__image {
-      width: 60px;
-      height: 60px;
-      margin-right: 15px;
-    }
+        .logo__image {
+          width: 60px;
+          height: 60px;
+          margin-right: 15px;
+        }
 
-    .logo__text {
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
+        .logo__text {
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
 
-      .logo__name {
-        font-size: 20px;
-        line-height: 25px;
-        font-weight: 700;
+          .logo__name {
+            font-size: 20px;
+            line-height: 25px;
+            font-weight: 700;
+          }
+
+          .logo__description {
+            display: none;
+          }
+        }
       }
 
-      .logo__description {
+      .navigation {
         display: none;
+
+        .navigation__item {
+          color: $color-description;
+          text-decoration: none;
+          line-height: 25px;
+          font-size: 18px;
+          margin-right: 50px;
+        }
+
+        .nav-list__item-selected {
+          font-weight: 700;
+        }
+
+        .navigation__item:last-child {
+          margin-right: 0;
+        }
+
+        .navigation__arrow {
+          display: inline-block;
+          width: 8px;
+          height: 5px;
+          margin-left: 11px;
+          background-image: url("https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson24/hw1/arrow.png");
+        }
+      }
+
+      .header__button {
+        display: none;
+        @include custom-button;
       }
     }
-  }
-
-  .navigation {
-    display: none;
-
-    .navigation__item {
-      color: $color-description;
-      text-decoration: none;
-      line-height: 25px;
-      font-size: 18px;
-      margin-right: 50px;
-    }
-
-    .nav-list__item-selected {
-      font-weight: 700;
-    }
-
-    .navigation__item:last-child {
-      margin-right: 0;
-    }
-
-    .navigation__arrow {
-      display: inline-block;
-      width: 8px;
-      height: 5px;
-      margin-left: 11px;
-      background-image: url("https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson24/hw1/arrow.png");
-    }
-  }
-
-  .header__button {
-    display: none;
-    @include custom-button;
   }
 }
