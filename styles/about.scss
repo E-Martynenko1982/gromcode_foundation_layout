@@ -3,22 +3,39 @@
   margin: auto;
   display: flex;
   justify-content: space-between;
-  .article {
-    padding-top: 77px;
-    padding-bottom: 76px;
+
+  @include desktop {
+    display: flex;
+    justify-content: space-between;
+    padding: 77px 130px 76px 130px;
+  }
+}
+
+.article {
+  @include desktop {
     width: 555px;
-    .article__title {
-      font-size: 22px;
-      line-height: 32px;
-      color: $color-description;
+  }
+
+  &:last-child {
+    margin-top: 20px;
+    @include desktop {
+      margin: 0;
     }
-    .article__text {
-      margin-top: 6px;
-      margin-bottom: 0;
-      font-size: 22px;
-      line-height: 32px;
-      color: $color-description;
-      opacity: 0.6;
-    }
+  }
+
+  &__title {
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 32px;
+    color: $color-description;
+  }
+
+  &__text {
+    margin-top: 6px;
+    margin-bottom: 0;
+    font-size: 22px;
+    line-height: 32px;
+    color: $color-description;
+    opacity: 0.6;
   }
 }

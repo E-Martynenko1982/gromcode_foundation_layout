@@ -1,11 +1,13 @@
 @import "./variables.scss";
 @import "./mixins.scss";
 @import "./footer.scss";
-@import "./header/header.scss";
+@import "./header.scss";
+@import "./header-media.scss";
 @import "./headline.scss";
 @import "./about.scss";
 @import "./customers.scss";
 @import "./features.scss";
+@import "./media_breakpoints.scss";
 
 * {
   box-sizing: border-box;
@@ -14,6 +16,7 @@
 html {
   font-size: 16px;
   font-family: "Work Sans", serif;
+  color: $color-description;
 }
 
 .page {
@@ -22,14 +25,16 @@ html {
   .top-section {
     background-color: $color-background-main;
   }
-  @media screen and (min-width: 400px) {
-    .page {
-      width: 1400px;
-      margin: auto;
-      min-height: 100vh;
-      display: flex;
-      flex-direction: column;
-    }
+}
+
+@include desktop {
+  .page {
+    width: 1400px;
+    margin: auto;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+
     .top-section {
       background-color: $color-background-main;
       padding-top: 39px;

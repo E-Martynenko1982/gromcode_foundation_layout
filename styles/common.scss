@@ -1,0 +1,11 @@
+.hide_desktop {
+  @include desktop {
+    display: none;
+  }
+}
+
+.hide_mobile {
+  @include smaller {
+    display: none;
+  }
+}
