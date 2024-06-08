@@ -1,21 +1,22 @@
 .footer {
-  margin-top: auto;
-
   display: flex;
   flex-direction: column;
+  margin-top: auto;
 
   .footer-navigation {
+    display: flex;
+    margin: 0 auto;
     height: 338px;
     width: 1140px;
-    margin: 0 auto;
-    display: flex;
+
     .about-company {
       margin-top: 44px;
       .footer__description {
-        width: 360px;
-        height: 85px;
         margin-top: 26px;
         margin-bottom: 25px;
+        width: 360px;
+        height: 85px;
+
         font-size: 18px;
         font-weight: 400;
         line-height: 26px;
@@ -39,16 +40,17 @@
       .nav-links {
         width: 265px;
         .nav-links__title {
+          margin: 0;
           color: $color-description;
           font-size: 22px;
           font-weight: 700;
           line-height: 28px;
-          margin: 0;
         }
         .nav-links__list {
           margin: 0;
-          padding: 0;
           margin-top: 18px;
+          padding: 0;
+
           list-style: none;
           color: $color-description;
           font-size: 18px;
@@ -60,23 +62,24 @@
     }
   }
   .footer-line {
+    margin: 0;
     border-top: 0.5px solid $color-description;
     width: 100%;
     opacity: 0.1;
-    margin: 0;
   }
   .footer-links {
-    height: 50px;
-    width: 1140px;
-    margin: 0 auto;
     display: flex;
     align-items: center;
+    margin: 0 auto;
+    height: 50px;
+    width: 1140px;
+
     .terms {
       line-height: 50px;
       font-size: 14px;
       .terms__items {
-        text-decoration: none;
         margin-right: 22px;
+        text-decoration: none;
 
         color: $color-description;
         opacity: 0.6;
@@ -86,8 +89,8 @@
     .social-links {
       margin-left: auto;
       .social-links__item {
-        text-decoration: none;
         margin-left: 20px;
+        text-decoration: none;
       }
       .social-links__item_twitter {
         width: 21px;

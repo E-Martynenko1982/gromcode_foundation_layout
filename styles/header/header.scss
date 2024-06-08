@@ -1,21 +1,19 @@
-@import "./header-media.scss";
-@import "./media_breakpoints.scss";
-
 .header {
   display: flex;
   align-items: center;
+  padding-left: 15px;
   height: 64px;
   width: 100%;
-  padding-left: 15px;
+
   background-color: $background-color-header-mobile;
 
   .logo {
     display: flex;
 
     &__image {
+      margin-right: 15px;
       width: 60px;
       height: 60px;
-      margin-right: 15px;
     }
 
     &__text {
@@ -32,9 +30,6 @@
 
     &__description {
       display: none;
-      // @include desktop {
-      //   display: block;
-      // }
     }
   }
 
@@ -50,11 +45,11 @@
   margin-right: 7px;
 
   &__item {
+    margin-right: 50px;
     color: $color-description;
     text-decoration: none;
     line-height: 25px;
     font-size: 18px;
-    margin-right: 50px;
   }
 
   .nav-list__item-selected {
@@ -67,15 +62,10 @@
 
   &__arrow {
     display: inline-block;
+    margin-left: 11px;
     width: 8px;
     height: 5px;
-    margin-left: 11px;
-    background-image: url("https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson24/hw1/arrow.png");
-  }
-}
 
-@media screen and (max-width: 400px) {
-  .navigation {
-    display: none;
+    background-image: url("https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson24/hw1/arrow.png");
   }
 }
