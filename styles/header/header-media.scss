@@ -11,20 +11,45 @@
       display: block;
       @include custom-button;
     }
-  }
-  .navigation {
-    display: block;
-    margin-top: 7px;
-    margin-left: auto;
-    margin-right: 75px;
-  }
+    .navigation {
+      display: block;
+      margin-top: 7px;
+      margin-left: auto;
+      margin-right: 75px;
 
-  .logo__description {
-    display: block;
-    font-size: 18px;
-    line-height: 25px;
-    font-weight: 400;
-    opacity: 0.6;
-    color: $color-description;
+      &__item {
+        margin-right: 50px;
+        color: $color-description;
+        text-decoration: none;
+        line-height: 25px;
+        font-size: 18px;
+      }
+
+      .nav-list__item-selected {
+        font-weight: 700;
+      }
+
+      &__item:last-child {
+        margin-right: 0;
+      }
+
+      &__arrow {
+        display: inline-block;
+        margin-left: 11px;
+        width: 8px;
+        height: 5px;
+
+        background-image: url("https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson24/hw1/arrow.png");
+      }
+    }
+
+    .logo__description {
+      display: block;
+      font-size: 18px;
+      line-height: 25px;
+      font-weight: 400;
+      opacity: 0.6;
+      color: $color-description;
+    }
   }
 }

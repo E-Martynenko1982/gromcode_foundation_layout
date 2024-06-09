@@ -99,63 +99,34 @@
   width: 100%;
   background-color: #fff;
 }
-.header .logo {
+.header__button {
+  display: none;
+}
+
+.logo {
   display: flex;
 }
-.header .logo__image {
+.logo__image {
   margin-right: 15px;
   width: 60px;
   height: 60px;
 }
-.header .logo__text {
+.logo__text {
   display: flex;
   flex-direction: column;
   justify-content: center;
 }
-.header .logo__name {
+.logo__name {
   font-size: 20px;
   line-height: 25px;
   font-weight: 700;
 }
-.header .logo__description {
+.logo__description {
   display: none;
-}
-.header__button {
-  display: none;
-  width: 160px;
-  height: 48px;
-  border: none;
-  border-radius: 2px;
-  background-color: #3040c4;
-  color: #ffffff;
-  font-weight: 700;
-  font-size: 18px;
 }
 
 .navigation {
-  margin-left: auto;
-  margin-top: 7px;
-  margin-right: 7px;
-}
-.navigation__item {
-  margin-right: 50px;
-  color: #2b292d;
-  text-decoration: none;
-  line-height: 25px;
-  font-size: 18px;
-}
-.navigation .nav-list__item-selected {
-  font-weight: 700;
-}
-.navigation__item:last-child {
-  margin-right: 0;
-}
-.navigation__arrow {
-  display: inline-block;
-  margin-left: 11px;
-  width: 8px;
-  height: 5px;
-  background-image: url("https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson24/hw1/arrow.png");
+  display: none;
 }
 
 @media screen and (min-width: 400px) {
@@ -177,13 +148,33 @@
     font-weight: 700;
     font-size: 18px;
   }
-  .navigation {
+  .header .navigation {
     display: block;
     margin-top: 7px;
     margin-left: auto;
     margin-right: 75px;
   }
-  .logo__description {
+  .header .navigation__item {
+    margin-right: 50px;
+    color: #2b292d;
+    text-decoration: none;
+    line-height: 25px;
+    font-size: 18px;
+  }
+  .header .navigation .nav-list__item-selected {
+    font-weight: 700;
+  }
+  .header .navigation__item:last-child {
+    margin-right: 0;
+  }
+  .header .navigation__arrow {
+    display: inline-block;
+    margin-left: 11px;
+    width: 8px;
+    height: 5px;
+    background-image: url("https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson24/hw1/arrow.png");
+  }
+  .header .logo__description {
     display: block;
     font-size: 18px;
     line-height: 25px;

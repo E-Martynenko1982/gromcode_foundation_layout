@@ -6,66 +6,36 @@
   width: 100%;
 
   background-color: $background-color-header-mobile;
-
-  .logo {
-    display: flex;
-
-    &__image {
-      margin-right: 15px;
-      width: 60px;
-      height: 60px;
-    }
-
-    &__text {
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-    }
-
-    &__name {
-      font-size: 20px;
-      line-height: 25px;
-      font-weight: 700;
-    }
-
-    &__description {
-      display: none;
-    }
-  }
-
   &__button {
     display: none;
-    @include custom-button;
+  }
+}
+
+.logo {
+  display: flex;
+
+  &__image {
+    margin-right: 15px;
+    width: 60px;
+    height: 60px;
+  }
+
+  &__text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  &__name {
+    font-size: 20px;
+    line-height: 25px;
+    font-weight: 700;
+  }
+
+  &__description {
+    display: none;
   }
 }
 
 .navigation {
-  margin-left: auto;
-  margin-top: 7px;
-  margin-right: 7px;
-
-  &__item {
-    margin-right: 50px;
-    color: $color-description;
-    text-decoration: none;
-    line-height: 25px;
-    font-size: 18px;
-  }
-
-  .nav-list__item-selected {
-    font-weight: 700;
-  }
-
-  &__item:last-child {
-    margin-right: 0;
-  }
-
-  &__arrow {
-    display: inline-block;
-    margin-left: 11px;
-    width: 8px;
-    height: 5px;
-
-    background-image: url("https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson24/hw1/arrow.png");
-  }
+  display: none;
 }
