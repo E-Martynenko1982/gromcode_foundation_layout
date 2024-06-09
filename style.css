@@ -103,7 +103,7 @@
   background: transparent;
 }
 .header__menu-button-icon {
-  display: block;
+  display: inline-block;
   width: 18px;
   height: 13px;
   background-image: url("https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson24/hw1/icon-hamburger.png");
@@ -171,44 +171,29 @@
   }
 }
 .headline {
-  display: flex;
-  position: relative;
-  margin: auto;
-  padding-bottom: 77px;
-  margin-top: 84px;
-  width: 1140px;
+  width: 100%;
 }
-.headline .headline__content {
-  position: absolute;
-  z-index: 1;
+.headline__content {
+  margin: 35px 15px 33px 15px;
 }
-.headline .headline__content .headline__title {
-  z-index: 1;
-  margin: 0;
-  width: 754px;
-  height: 165px;
-  font-size: 80px;
+.headline__title {
+  margin: 35px 15px 24px;
+  font-size: 50px;
   font-weight: 700;
-  line-height: 78px;
-  letter-spacing: -0.5px;
-  color: #2b292d;
+  line-height: 50px;
+  letter-spacing: -0.3125px;
 }
-.headline .headline__content .headline__description {
-  z-index: 1;
-  margin-top: 34px;
+.headline__description {
+  margin-top: 24px;
   margin-bottom: 0;
-  width: 456px;
-  height: 102px;
   font-size: 24px;
-  font-weight: 400;
   line-height: 34px;
   color: #2b292d;
 }
-.headline .headline__content .headline__actions {
-  display: flex;
-  margin-top: 58px;
+.headline__actions {
+  margin-top: 30px;
 }
-.headline .headline__content .headline__actions .headline__button-1 {
+.headline__button-1 {
   width: 160px;
   height: 48px;
   border: none;
@@ -217,9 +202,9 @@
   color: #ffffff;
   font-weight: 700;
   font-size: 18px;
-  margin-right: 10px;
+  width: 290px;
 }
-.headline .headline__content .headline__actions .headline__button {
+.headline__button {
   width: 160px;
   height: 48px;
   border: none;
@@ -228,11 +213,12 @@
   color: #ffffff;
   font-weight: 700;
   font-size: 18px;
-  width: 158px;
+  margin-top: 15px;
+  width: 290px;
   background-color: #ffffff;
   color: #3040c4;
 }
-.headline .headline__banner {
+.headline__banner {
   position: relative;
   margin-left: auto;
   right: -105px;
@@ -241,6 +227,69 @@
   height: 448px;
 }
 
+@media screen and (min-width: 400px) {
+  .headline {
+    display: flex;
+    position: relative;
+    margin: auto;
+    padding-bottom: 77px;
+    margin-top: 84px;
+    width: 1140px;
+  }
+  .headline__content {
+    position: absolute;
+    z-index: 1;
+  }
+  .headline__title {
+    z-index: 1;
+    margin: 0;
+    width: 754px;
+    height: 165px;
+    font-size: 80px;
+    font-weight: 700;
+    line-height: 78px;
+    letter-spacing: -0.5px;
+    color: #2b292d;
+  }
+  .headline__description {
+    z-index: 1;
+    margin-top: 34px;
+    width: 456px;
+    height: 102px;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 34px;
+    color: #2b292d;
+  }
+  .headline__actions {
+    display: flex;
+    margin-top: 58px;
+  }
+  .headline__button-1 {
+    width: 160px;
+    height: 48px;
+    border: none;
+    border-radius: 2px;
+    background-color: #3040c4;
+    color: #ffffff;
+    font-weight: 700;
+    font-size: 18px;
+    margin-right: 10px;
+  }
+  .headline__button {
+    width: 160px;
+    height: 48px;
+    border: none;
+    border-radius: 2px;
+    background-color: #3040c4;
+    color: #ffffff;
+    font-weight: 700;
+    font-size: 18px;
+    width: 158px;
+    background-color: #ffffff;
+    color: #3040c4;
+  }
+}
 .about {
   display: flex;
   justify-content: space-between;
