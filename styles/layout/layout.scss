@@ -1,13 +1,13 @@
-@import "./variables.scss";
-@import "./mixins.scss";
-@import "./footer.scss";
-@import "./header/header.scss";
-@import "./header/header-media.scss";
-@import "./headline.scss";
-@import "./about.scss";
-@import "./customers.scss";
-@import "./features.scss";
-@import "./media_breakpoints.scss";
+@import "../variables.scss";
+@import "../mixins.scss";
+@import "../footer/footer.scss";
+@import "../header/header.scss";
+@import "../header/header-media.scss";
+@import "../headline/headline.scss";
+@import "../about/about.scss";
+@import "../customers/customers.scss";
+@import "../features/features.scss";
+@import "../media_breakpoints.scss";
 
 * {
   box-sizing: border-box;
