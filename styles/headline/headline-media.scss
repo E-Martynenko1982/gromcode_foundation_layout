@@ -14,6 +14,7 @@
     &__content {
       position: absolute;
       z-index: 1;
+      margin: 0;
     }
     &__title {
       z-index: 1;
@@ -51,9 +52,20 @@
 
     &__button {
       @include custom-button;
+      margin-top: 0;
       width: 158px;
       background-color: $color-text-white;
       color: $color-background-blue;
+    }
+
+    &__banner {
+      position: relative;
+      margin-left: auto;
+      right: -105px;
+      top: 0;
+
+      width: 796px;
+      height: 448px;
     }
   }
 }

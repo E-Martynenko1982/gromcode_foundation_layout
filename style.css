@@ -177,7 +177,7 @@
   margin: 35px 15px 33px 15px;
 }
 .headline__title {
-  margin: 35px 15px 24px;
+  margin: 0;
   font-size: 50px;
   font-weight: 700;
   line-height: 50px;
@@ -219,12 +219,8 @@
   color: #3040c4;
 }
 .headline__banner {
-  position: relative;
-  margin-left: auto;
-  right: -105px;
-  top: 0;
-  width: 796px;
-  height: 448px;
+  width: 100%;
+  margin-bottom: 36px;
 }
 
 @media screen and (min-width: 400px) {
@@ -239,6 +235,7 @@
   .headline__content {
     position: absolute;
     z-index: 1;
+    margin: 0;
   }
   .headline__title {
     z-index: 1;
@@ -285,9 +282,18 @@
     color: #ffffff;
     font-weight: 700;
     font-size: 18px;
+    margin-top: 0;
     width: 158px;
     background-color: #ffffff;
     color: #3040c4;
+  }
+  .headline__banner {
+    position: relative;
+    margin-left: auto;
+    right: -105px;
+    top: 0;
+    width: 796px;
+    height: 448px;
   }
 }
 .about {
