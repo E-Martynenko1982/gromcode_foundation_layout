@@ -1,4 +1,4 @@
-@import "../media_breakpoints.scss";
+@import "./header-media.scss";
 
 .header {
   display: flex;
@@ -7,6 +7,7 @@
   height: 64px;
   width: 100%;
   background-color: $background-color-header-mobile;
+
   .logo {
     display: flex;
 
@@ -20,16 +21,16 @@
       display: flex;
       flex-direction: column;
       justify-content: center;
+    }
 
-      &__name {
-        font-size: 20px;
-        line-height: 25px;
-        font-weight: 700;
-      }
+    &__name {
+      font-size: 20px;
+      line-height: 25px;
+      font-weight: 700;
+    }
 
-      &__description {
-        display: none;
-      }
+    &__description {
+      display: none;
     }
   }
 
@@ -39,5 +40,22 @@
 
   &__button {
     display: none;
+  }
+
+  &__menu-button {
+    height: 100%;
+    margin-left: auto;
+    width: 58px;
+    border: none;
+    border-left: 1px solid #00000026;
+
+    background: transparent;
+
+    &__menu-button-icon {
+      display: block;
+      width: 18px;
+      height: 13px;
+      background-image: url("https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson24/hw1/icon-hamburger.png");
+    }
   }
 }

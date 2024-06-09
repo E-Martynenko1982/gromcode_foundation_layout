@@ -1,8 +1,8 @@
 @import "../media_breakpoints.scss";
+@import "../variables.scss";
 
 @include desktop {
   .header {
-    display: flex;
     width: 1140px;
     height: 62px;
     margin: auto;
@@ -21,11 +21,11 @@
         line-height: 25px;
         font-size: 18px;
 
-        .nav-list__item-selected {
+        &.nav-list__item-selected {
           font-weight: 700;
         }
 
-        &__item:last-child {
+        &:last-child {
           margin-right: 0;
         }
 
@@ -34,14 +34,18 @@
           margin-left: 11px;
           width: 8px;
           height: 5px;
-
           background-image: url("https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson24/hw1/arrow.png");
         }
       }
     }
+
     &__button {
       display: block;
       @include custom-button;
+    }
+
+    &__menu-button {
+      display: none;
     }
 
     .logo {
