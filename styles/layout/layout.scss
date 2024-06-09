@@ -8,6 +8,7 @@
 @import "../customers/customers.scss";
 @import "../features/features.scss";
 @import "../media_breakpoints.scss";
+@import "./media-layout.scss";
 
 * {
   box-sizing: border-box;
@@ -24,21 +25,5 @@ html {
   overflow-x: hidden;
   .top-section {
     background-color: $color-background-main;
-  }
-}
-
-@include desktop {
-  .page {
-    display: flex;
-    flex-direction: column;
-    margin: auto;
-    width: 1400px;
-
-    min-height: 100vh;
-
-    .top-section {
-      padding-top: 39px;
-      background-color: $color-background-main;
-    }
   }
 }

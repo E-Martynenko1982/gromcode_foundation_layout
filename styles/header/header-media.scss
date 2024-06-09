@@ -7,10 +7,7 @@
     height: 62px;
     margin: auto;
     background-color: $color-background-main;
-    &__button {
-      display: block;
-      @include custom-button;
-    }
+
     .navigation {
       display: block;
       margin-top: 7px;
@@ -23,33 +20,45 @@
         text-decoration: none;
         line-height: 25px;
         font-size: 18px;
-      }
 
-      .nav-list__item-selected {
-        font-weight: 700;
-      }
+        .nav-list__item-selected {
+          font-weight: 700;
+        }
 
-      &__item:last-child {
-        margin-right: 0;
-      }
+        &__item:last-child {
+          margin-right: 0;
+        }
 
-      &__arrow {
-        display: inline-block;
-        margin-left: 11px;
-        width: 8px;
-        height: 5px;
+        &__arrow {
+          display: inline-block;
+          margin-left: 11px;
+          width: 8px;
+          height: 5px;
 
-        background-image: url("https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson24/hw1/arrow.png");
+          background-image: url("https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson24/hw1/arrow.png");
+        }
       }
     }
-
-    .logo__description {
+    &__button {
       display: block;
-      font-size: 18px;
-      line-height: 25px;
-      font-weight: 400;
-      opacity: 0.6;
-      color: $color-description;
+      @include custom-button;
+    }
+
+    .logo {
+      &__image {
+        margin-right: 15px;
+        width: 60px;
+        height: 60px;
+      }
+
+      &__description {
+        display: block;
+        font-size: 18px;
+        line-height: 25px;
+        font-weight: 400;
+        opacity: 0.6;
+        color: $color-description;
+      }
     }
   }
 }
