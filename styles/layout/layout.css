@@ -242,7 +242,7 @@
     margin: 0;
     width: 754px;
     height: 165px;
-    font-size: 80px;
+    font-size: 120px;
     font-weight: 700;
     line-height: 78px;
     letter-spacing: -0.5px;
@@ -556,6 +556,4 @@ html {
 }
 .page .top-section {
   background-color: #f3c6bd;
-}
-
-/*# sourceMappingURL=style.css.map */
+}/*# sourceMappingURL=layout.css.map */
