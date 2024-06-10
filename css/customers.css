@@ -1,0 +1,13 @@
+.customers {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 30px;
+  padding-bottom: 106px;
+  margin: auto;
+  width: 1140px;
+}
+
+.customers {
+  filter: brightness(0);
+}
