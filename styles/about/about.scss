@@ -1,29 +1,18 @@
-.about {
-  display: flex;
-  justify-content: space-between;
-  margin: auto;
-  width: 1140px;
+@import '../variables.scss';
 
-  @include desktop {
-    display: flex;
-    justify-content: space-between;
-    padding: 77px 130px 76px 130px;
-  }
+.about {
+  padding: 46px 15px;
+  width: 100%;
+  background: $background-color-about;
 }
 
 .article {
-  @include desktop {
-    width: 555px;
-  }
-
   &:last-child {
     margin-top: 20px;
-    @include desktop {
-      margin: 0;
-    }
   }
 
   &__title {
+    margin: 0;
     font-weight: 700;
     font-size: 22px;
     line-height: 32px;

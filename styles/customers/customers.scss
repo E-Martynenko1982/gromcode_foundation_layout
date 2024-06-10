@@ -1,13 +1,27 @@
+@import '../variables.scss';
 .customers {
   display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding-top: 30px;
-  padding-bottom: 106px;
-  margin: auto;
-  width: 1140px;
-}
+  flex-direction: column;
 
-.customers {
-  filter: brightness(0);
+  &__row {
+    display: flex;
+  }
+
+  &__item {
+    height: 94px;
+    width: 107px;
+    border-bottom: 1px solid $customers-border-color;
+    border-right: 1px solid $customers-border-color;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  &__item:last-child {
+    border-right: none;
+  }
+  &__logo {
+    max-width: 80%;
+    filter: brightness(0);
+  }
 }

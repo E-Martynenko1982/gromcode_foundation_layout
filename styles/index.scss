@@ -1,0 +1,33 @@
+@import './variables.scss';
+@import './mixins.scss';
+@import './header/header.scss';
+@import './header/header-media.scss';
+@import './headline/headline.scss';
+@import './headline/headline-media.scss';
+@import './about/about.scss';
+@import './about/about-media.scss';
+@import './customers/customers.scss';
+@import './customers/customers-media.scss';
+@import './features/features.scss';
+@import './footer/footer.scss';
+
+@import './layout/media-layout.scss';
+@import './media_breakpoints.scss';
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 16px;
+  font-family: 'Work Sans', serif;
+  color: $color-description;
+}
+
+.page {
+  width: 100%;
+  overflow-x: hidden;
+  .top-section {
+    background-color: $color-background-main;
+  }
+}

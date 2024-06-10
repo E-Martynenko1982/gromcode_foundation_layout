@@ -182,6 +182,7 @@
   font-weight: 700;
   line-height: 50px;
   letter-spacing: -0.3125px;
+  color: green;
 }
 .headline__description {
   margin-top: 24px;
@@ -297,33 +298,16 @@
   }
 }
 .about {
-  display: flex;
-  justify-content: space-between;
-  margin: auto;
-  width: 1140px;
-}
-@media screen and (min-width: 400px) {
-  .about {
-    display: flex;
-    justify-content: space-between;
-    padding: 77px 130px 76px 130px;
-  }
+  padding: 46px 15px;
+  width: 100%;
+  background: #f4f5f7;
 }
 
-@media screen and (min-width: 400px) {
-  .article {
-    width: 555px;
-  }
-}
 .article:last-child {
   margin-top: 20px;
 }
-@media screen and (min-width: 400px) {
-  .article:last-child {
-    margin: 0;
-  }
-}
 .article__title {
+  margin: 0;
   font-weight: 700;
   font-size: 22px;
   line-height: 32px;
@@ -338,20 +322,62 @@
   opacity: 0.6;
 }
 
+@media screen and (min-width: 400px) {
+  .about {
+    display: flex;
+    justify-content: space-between;
+    padding: 77px 130px 76px 130px;
+  }
+  .article {
+    width: 555px;
+  }
+  .article:last-child {
+    margin-top: 0;
+  }
+}
 .customers {
   display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding-top: 30px;
-  padding-bottom: 106px;
-  margin: auto;
-  width: 1140px;
+  flex-direction: column;
 }
-
-.customers {
+.customers__row {
+  display: flex;
+}
+.customers__item {
+  height: 94px;
+  width: 107px;
+  border-bottom: 1px solid #e3e3e3;
+  border-right: 1px solid #e3e3e3;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.customers__item:last-child {
+  border-right: none;
+}
+.customers__logo {
+  max-width: 80%;
   filter: brightness(0);
 }
 
+@media screen and (min-width: 400px) {
+  .customers {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    align-items: center;
+    padding-top: 30px;
+    padding-bottom: 106px;
+    margin: auto;
+    width: 1140px;
+  }
+  .customers__item {
+    border: none;
+  }
+  .customers__row {
+    flex: 1;
+    justify-content: space-around;
+  }
+}
 .features {
   display: flex;
   position: relative;
