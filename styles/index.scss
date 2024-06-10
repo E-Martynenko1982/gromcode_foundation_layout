@@ -1,18 +1,17 @@
-@import './variables.scss';
-@import './mixins.scss';
-@import './header/header.scss';
-@import './header/header-media.scss';
-@import './headline/headline.scss';
-@import './headline/headline-media.scss';
-@import './about/about.scss';
-@import './about/about-media.scss';
-@import './customers/customers.scss';
-@import './customers/customers-media.scss';
-@import './features/features.scss';
-@import './footer/footer.scss';
+@import "./variables.scss";
+@import "./mixins.scss";
+@import "./header.scss";
 
-@import './layout/media-layout.scss';
-@import './media_breakpoints.scss';
+@import "./headline.scss";
+
+@import "./about.scss";
+@import "./customers.scss";
+
+@import "./features.scss";
+@import "./audience.scss";
+@import "./footer.scss";
+
+@import "./media_breakpoints.scss";
 
 * {
   box-sizing: border-box;
@@ -20,14 +19,28 @@
 
 html {
   font-size: 16px;
-  font-family: 'Work Sans', serif;
+  font-family: "Work Sans", serif;
   color: $color-description;
 }
 
 .page {
   width: 100%;
   overflow-x: hidden;
+
+  @include desktop {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    width: 1400px;
+
+    min-height: 100vh;
+  }
   .top-section {
     background-color: $color-background-main;
+
+    @include desktop {
+      padding-top: 39px;
+      background-color: $color-background-main;
+    }
   }
 }

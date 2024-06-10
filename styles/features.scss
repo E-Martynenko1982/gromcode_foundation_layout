@@ -1,0 +1,99 @@
+@import "./variables.scss";
+@import "./media_breakpoints.scss";
+
+.features {
+  display: flex;
+  position: relative;
+
+  @include smaller {
+    display: none;
+  }
+
+  &__left-decoration {
+    position: absolute;
+    top: 258px;
+    height: 166px;
+  }
+  &__content {
+    display: flex;
+    width: 1140px;
+    margin: auto;
+  }
+  &__column {
+    width: 459px;
+  }
+  &__subtitle {
+    @include desktop {
+      margin: 0;
+      font-size: 22px;
+      line-height: 34px;
+      color: $color-features-subtitle;
+      font-weight: 700;
+    }
+  }
+
+  &__title {
+    margin-top: 24px;
+    margin-bottom: 0;
+    font-size: 56px;
+    line-height: 56px;
+    letter-spacing: -0.5px;
+    color: $color-description;
+  }
+
+  &__description {
+    margin-top: 30px;
+    margin-bottom: 0;
+    width: 461px;
+    height: 102px;
+
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 34px;
+  }
+
+  &__advantage-header {
+    display: flex;
+    margin-top: 42px;
+    line-height: 42px;
+  }
+  &__advantage-title {
+    margin: 0;
+    margin-left: 15px;
+    font-size: 22px;
+    line-height: 26px;
+    color: $advantage-h5;
+  }
+
+  &__advantage-description {
+    margin-top: 8px;
+    margin-bottom: 0;
+    padding-bottom: 20px;
+    border-bottom: 3px solid $advantage-h5;
+    font-size: 18px;
+    line-height: 26px;
+  }
+
+  .features__advantage-item {
+    display: flex;
+    margin-top: 21px;
+    padding-bottom: 22px;
+    border-bottom: 1px solid #2b292d26;
+  }
+  &__advantage-item-text {
+    margin-left: 15px;
+    font-size: 22px;
+    line-height: 26px;
+    color: $color-description;
+    font-weight: 700;
+  }
+
+  &__left-decoration {
+    height: 166px;
+  }
+
+  &__banner {
+    position: absolute;
+    right: 0;
+  }
+}

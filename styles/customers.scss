@@ -1,10 +1,27 @@
-@import '../variables.scss';
+@import "./variables.scss";
+@import "./media_breakpoints.scss";
+
 .customers {
   display: flex;
   flex-direction: column;
 
+  @include desktop {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    align-items: center;
+    padding-top: 30px;
+    padding-bottom: 106px;
+    margin: auto;
+    width: 1140px;
+  }
   &__row {
     display: flex;
+
+    @include desktop {
+      flex: 1;
+      justify-content: space-around;
+    }
   }
 
   &__item {
@@ -15,6 +32,10 @@
     display: flex;
     align-items: center;
     justify-content: center;
+
+    @include desktop {
+      border: none;
+    }
   }
 
   &__item:last-child {

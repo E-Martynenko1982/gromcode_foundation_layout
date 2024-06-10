@@ -1,14 +1,29 @@
-@import '../variables.scss';
+@import "./variables.scss";
+@import "./media_breakpoints.scss";
 
 .about {
   padding: 46px 15px;
   width: 100%;
   background: $background-color-about;
+
+  @include desktop {
+    display: flex;
+
+    justify-content: space-between;
+    padding: 77px 130px 76px 130px;
+  }
 }
 
 .article {
+  @include desktop {
+    width: 555px;
+  }
   &:last-child {
     margin-top: 20px;
+
+    @include desktop {
+      margin-top: 0;
+    }
   }
 
   &__title {
