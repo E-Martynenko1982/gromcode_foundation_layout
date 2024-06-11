@@ -25,13 +25,14 @@
   }
 
   &__item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex: 1;
     height: 94px;
     width: 107px;
     border-bottom: 1px solid $customers-border-color;
     border-right: 1px solid $customers-border-color;
-    display: flex;
-    align-items: center;
-    justify-content: center;
 
     @include desktop {
       border: none;
