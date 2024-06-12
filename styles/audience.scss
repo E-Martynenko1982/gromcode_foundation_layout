@@ -27,9 +27,11 @@
   }
 
   &__title-big {
+    margin: auto;
     margin-top: 17px;
-    width: 290px;
+
     margin-bottom: 0;
+    width: 290px;
     font-size: 40px;
     line-height: 100%;
     letter-spacing: -0.3571428954601288px;
@@ -50,6 +52,7 @@
   }
 
   &__description {
+    margin: auto;
     margin-top: 18px;
     margin-bottom: 0;
     width: 290px;
@@ -67,6 +70,7 @@
   }
 
   &__actions {
+    margin: auto;
     margin-top: 30px;
 
     @include desktop {
@@ -148,6 +152,10 @@
     font-size: 22px;
     line-height: 28px;
     color: $color-description;
+
+    @include desktop {
+      margin-top: 22px;
+    }
   }
 
   &__links-caption:hover {

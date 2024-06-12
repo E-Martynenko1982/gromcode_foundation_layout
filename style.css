@@ -515,7 +515,7 @@
   text-align: center;
   padding-left: 15px;
   padding-right: 15px;
-  background-color: rgba(0, 161, 198, 0.1490196078);
+  background-color: rgba(0, 161, 198, 0.0705882353);
 }
 .audience__title-small {
   margin-top: 50px;
@@ -531,9 +531,10 @@
   }
 }
 .audience__title-big {
+  margin: auto;
   margin-top: 17px;
-  width: 290px;
   margin-bottom: 0;
+  width: 290px;
   font-size: 40px;
   line-height: 100%;
   letter-spacing: -0.3571428955px;
@@ -551,6 +552,7 @@
   }
 }
 .audience__description {
+  margin: auto;
   margin-top: 18px;
   margin-bottom: 0;
   width: 290px;
@@ -568,6 +570,7 @@
   }
 }
 .audience__actions {
+  margin: auto;
   margin-top: 30px;
 }
 @media screen and (min-width: 1400px) {
@@ -664,6 +667,11 @@
   font-size: 22px;
   line-height: 28px;
   color: #2b292d;
+}
+@media screen and (min-width: 1400px) {
+  .audience__links-caption {
+    margin-top: 22px;
+  }
 }
 @media screen and (min-width: 1400px) {
   .audience__links-caption:hover {
