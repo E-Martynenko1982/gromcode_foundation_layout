@@ -1,4 +1,4 @@
-$breakpoint_desktop: 400px;
+$breakpoint_desktop: 1400px;
 
 @mixin desktop {
   @media screen and (min-width: $breakpoint_desktop) {
