@@ -12,6 +12,7 @@
   padding-right: 15px;
   background-color: $audience-background-mobile;
   opacity: 0.7;
+
   &__title-small {
     margin-top: 50px;
     margin-bottom: 0;
@@ -31,7 +32,7 @@
     width: 290px;
     margin-bottom: 0;
     font-size: 40px;
-    line-height: 40px;
+    line-height: 100%;
     letter-spacing: -0.3571428954601288px;
     color: $color-description;
 

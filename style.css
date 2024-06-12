@@ -536,7 +536,7 @@
   width: 290px;
   margin-bottom: 0;
   font-size: 40px;
-  line-height: 40px;
+  line-height: 100%;
   letter-spacing: -0.3571428955px;
   color: #2b292d;
 }
