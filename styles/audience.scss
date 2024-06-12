@@ -110,7 +110,7 @@
       display: flex;
       margin: auto;
       margin-top: 111px;
-      margin-bottom: 0;
+      padding-bottom: 0;
     }
   }
 
@@ -131,6 +131,7 @@
     @include desktop {
       width: 262px;
       margin-right: 30px;
+      margin-bottom: 0;
     }
   }
 
