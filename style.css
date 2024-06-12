@@ -642,13 +642,10 @@
     width: 262px;
   }
 }
-.audience__links-item-selected {
-  background-color: #3141c5;
-}
-.audience__links-caption-selected {
-  font-size: 22px;
-  line-height: 28px;
-  color: #ffffff;
+@media screen and (min-width: 1400px) {
+  .audience__links-item:hover {
+    background-color: #3141c5;
+  }
 }
 .audience__links-item a {
   text-decoration: none;
@@ -657,6 +654,11 @@
   font-size: 22px;
   line-height: 28px;
   color: #2b292d;
+}
+@media screen and (min-width: 1400px) {
+  .audience__links-caption:hover {
+    color: #fff;
+  }
 }
 
 .footer {

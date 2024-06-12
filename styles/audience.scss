@@ -127,14 +127,10 @@
     }
   }
 
-  &__links-item-selected {
-    background-color: $audience-background-selected;
-  }
-
-  &__links-caption-selected {
-    font-size: 22px;
-    line-height: 28px;
-    color: $color-text-white;
+  &__links-item:hover {
+    @include desktop {
+      background-color: $audience-background-selected;
+    }
   }
 
   &__links-item a {
@@ -145,5 +141,11 @@
     font-size: 22px;
     line-height: 28px;
     color: $color-description;
+  }
+
+  &__links-caption:hover {
+    @include desktop {
+      color: $background-color-header-mobile;
+    }
   }
 }
