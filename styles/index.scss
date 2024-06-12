@@ -27,13 +27,12 @@ html {
 
 .page {
   width: 100%;
-  overflow-x: hidden;
 
   @include desktop {
     display: flex;
     flex-direction: column;
     margin: auto;
-    width: 1400px;
+    max-width: 1400px;
 
     min-height: 100vh;
   }

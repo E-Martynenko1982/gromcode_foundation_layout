@@ -714,7 +714,6 @@
   .order__form {
     display: flex;
     margin-top: 26px;
-    line-height: 100%;
   }
 }
 .order__title {
@@ -1009,14 +1008,13 @@ html {
 
 .page {
   width: 100%;
-  overflow-x: hidden;
 }
 @media screen and (min-width: 1400px) {
   .page {
     display: flex;
     flex-direction: column;
     margin: auto;
-    width: 1400px;
+    max-width: 1400px;
     min-height: 100vh;
   }
 }
