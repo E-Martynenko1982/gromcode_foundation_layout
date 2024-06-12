@@ -520,6 +520,7 @@
 @media screen and (min-width: 1400px) {
   .audience {
     padding-bottom: 110px;
+    height: 983px;
   }
 }
 .audience__title-small {
