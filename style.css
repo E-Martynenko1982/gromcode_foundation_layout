@@ -554,6 +554,7 @@
 }
 .audience__description {
   margin-top: 18px;
+  margin-bottom: 0;
   width: 290px;
   font-size: 24px;
   line-height: 34px;
