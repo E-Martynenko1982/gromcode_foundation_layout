@@ -517,6 +517,11 @@
   padding-right: 15px;
   background-color: rgba(0, 161, 198, 0.0705882353);
 }
+@media screen and (min-width: 1400px) {
+  .audience {
+    padding-bottom: 110px;
+  }
+}
 .audience__title-small {
   margin-top: 50px;
   margin-bottom: 0;
@@ -624,7 +629,7 @@
     display: flex;
     margin: auto;
     margin-top: 111px;
-    margin-bottom: 110px;
+    margin-bottom: 0;
   }
 }
 .audience__links-item {
