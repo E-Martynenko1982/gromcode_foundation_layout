@@ -10,6 +10,7 @@
   background-color: $audience-background-mobile;
 
   &__title-small {
+    margin-top: 50px;
     font-size: 22px;
     line-height: 34px;
     color: $color-description;
@@ -21,6 +22,9 @@
   }
 
   &__title-big {
+    margin-top: 17px;
+    width: 290px;
+
     font-size: 40px;
     line-height: 40px;
     letter-spacing: -0.3571428954601288px;
@@ -41,6 +45,9 @@
   }
 
   &__description {
+    margin: 18px 15px 0 15px;
+
+    width: 290px;
     font-size: 24px;
     line-height: 34px;
     font-weight: 400;
@@ -54,6 +61,8 @@
   }
 
   &__actions {
+    margin-top: 30px;
+
     @include desktop {
       margin-top: 34px;
     }
@@ -62,14 +71,24 @@
   &__button {
     @include custom-button;
     margin-top: 12px;
-    margin-left: 10px;
-    width: 158px;
+
+    width: 290px;
     background-color: $color-text-white;
     color: $audience-button-black;
+
+    @include desktop {
+      margin-left: 10px;
+      width: 158px;
+    }
   }
 
   &__button-1 {
     @include custom-button;
+    width: 290px;
+
+    @include desktop {
+      width: 160px;
+    }
   }
 
   &__links {
