@@ -139,6 +139,7 @@
     margin-bottom: 50px;
     @include desktop {
       margin-right: 0;
+      margin-bottom: 0;
     }
   }
   &__links-item:hover {
