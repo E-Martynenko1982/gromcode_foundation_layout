@@ -139,7 +139,8 @@
     display: flex;
     position: relative;
     margin: auto;
-    margin-top: 76px;
+    padding-bottom: 77px;
+    margin-top: 84px;
     width: 1140px;
   }
 }
@@ -150,15 +151,14 @@
   .headline__content {
     position: absolute;
     z-index: 1;
-    margin: 0;
   }
 }
 .headline__title {
   margin: 0;
   font-size: 50px;
   font-weight: 700;
-  line-height: 50px;
-  letter-spacing: -0.3125px;
+  line-height: 100%;
+  letter-spacing: -0.01em;
 }
 @media screen and (min-width: 1400px) {
   .headline__title {
@@ -168,8 +168,8 @@
     height: 165px;
     font-size: 80px;
     font-weight: 700;
-    line-height: 78px;
-    letter-spacing: -0.5px;
+    line-height: 97%;
+    letter-spacing: -0.01em;
     color: #2b292d;
   }
 }
@@ -184,6 +184,7 @@
   .headline__description {
     z-index: 1;
     margin-top: 34px;
+    margin-bottom: 0;
     width: 456px;
     height: 102px;
     font-size: 24px;
@@ -267,7 +268,6 @@
   .headline__banner {
     position: relative;
     margin-left: auto;
-    margin-bottom: 0;
     right: -105px;
     top: 0;
     width: 796px;
