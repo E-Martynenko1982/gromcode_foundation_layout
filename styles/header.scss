@@ -65,7 +65,8 @@
 
     @include desktop {
       display: block;
-      margin-button: 14px;
+
+      line-height: 48px;
       @include custom-button;
     }
   }
@@ -98,7 +99,7 @@
       display: block;
       margin-top: 7px;
       margin-left: auto;
-      margin-right: 75px;
+      // margin-right: 75px;
     }
   }
   .navigation__item {
