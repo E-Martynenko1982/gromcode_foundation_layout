@@ -31,7 +31,7 @@ html {
   @include desktop {
     display: flex;
     flex-direction: column;
-    margin: auto;
+    //margin: auto;
     max-width: 1400px;
 
     min-height: 100vh;
@@ -40,7 +40,7 @@ html {
     background-color: $color-background-main;
 
     @include desktop {
-      padding-top: 39px;
+      //padding-top: 39px;
       background-color: $color-background-main;
     }
   }
