@@ -269,6 +269,7 @@
   .headline__banner {
     position: relative;
     margin-left: auto;
+    margin-bottom: 0;
     right: -105px;
     top: 0;
     width: 796px;
