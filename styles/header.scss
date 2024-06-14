@@ -11,49 +11,52 @@
   background-color: $background-color-header-mobile;
 
   @include desktop {
+    align-items: flex-start;
+    margin-top: 39px;
+    padding-left: 0;
     width: 1140px;
     height: 62px;
-    margin-top: 39px;
+
     background-color: $color-background-main;
   }
+
   .logo {
     display: flex;
+  }
+  .logo-vertical__image {
+    margin-right: 13px;
+    width: 48px;
+    height: 48px;
 
-    &__image {
-      margin-right: 13px;
-      width: 48px;
-      height: 48px;
-
-      @include desktop {
-        margin-right: 15px;
-        width: 60px;
-        height: 60px;
-      }
+    @include desktop {
+      margin-right: 15px;
+      width: 60px;
+      height: 60px;
     }
+  }
 
-    &__text {
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-    }
+  .logo__text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
 
-    &__name {
-      font-size: 20px;
+  .logo__name {
+    font-size: 20px;
+    line-height: 25px;
+    font-weight: 700;
+  }
+
+  .logo__description {
+    display: none;
+
+    @include desktop {
+      display: block;
+      font-size: 18px;
       line-height: 25px;
-      font-weight: 700;
-    }
-
-    &__description {
-      display: none;
-
-      @include desktop {
-        display: block;
-        font-size: 18px;
-        line-height: 25px;
-        font-weight: 400;
-        opacity: 0.6;
-        color: $color-description;
-      }
+      font-weight: 400;
+      opacity: 0.6;
+      color: $color-description;
     }
   }
 
@@ -87,19 +90,18 @@
     height: 13px;
     background-image: url("https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson24/hw1/icon-hamburger.png");
   }
-}
 
-.navigation {
-  display: none;
+  .navigation {
+    display: none;
 
-  @include desktop {
-    display: block;
-    margin-top: 7px;
-    margin-left: auto;
-    margin-right: 75px;
+    @include desktop {
+      display: block;
+      margin-top: 7px;
+      margin-left: auto;
+      margin-right: 75px;
+    }
   }
-
-  &__item {
+  .navigation__item {
     @include desktop {
       margin-right: 50px;
       color: $color-description;
@@ -109,7 +111,7 @@
     }
   }
 
-  &__arrow {
+  .navigation__arrow {
     @include desktop {
       display: inline-block;
       margin-left: 11px;
@@ -118,7 +120,7 @@
       background-image: url("https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson24/hw1/arrow.png");
     }
   }
-  &.nav-list__item-selected {
+  .nav-list__item-selected {
     @include desktop {
       font-weight: 700;
     }

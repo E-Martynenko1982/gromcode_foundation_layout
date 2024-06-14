@@ -9,22 +9,24 @@
 }
 @media screen and (min-width: 1400px) {
   .header {
+    align-items: flex-start;
+    margin-top: 39px;
+    padding-left: 0;
     width: 1140px;
     height: 62px;
-    margin-top: 39px;
     background-color: #f3c6bd;
   }
 }
 .header .logo {
   display: flex;
 }
-.header .logo__image {
+.header .logo-vertical__image {
   margin-right: 13px;
   width: 48px;
   height: 48px;
 }
 @media screen and (min-width: 1400px) {
-  .header .logo__image {
+  .header .logo-vertical__image {
     margin-right: 15px;
     width: 60px;
     height: 60px;
@@ -90,12 +92,11 @@
   height: 13px;
   background-image: url("https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson24/hw1/icon-hamburger.png");
 }
-
-.navigation {
+.header .navigation {
   display: none;
 }
 @media screen and (min-width: 1400px) {
-  .navigation {
+  .header .navigation {
     display: block;
     margin-top: 7px;
     margin-left: auto;
@@ -103,7 +104,7 @@
   }
 }
 @media screen and (min-width: 1400px) {
-  .navigation__item {
+  .header .navigation__item {
     margin-right: 50px;
     color: #2b292d;
     text-decoration: none;
@@ -112,7 +113,7 @@
   }
 }
 @media screen and (min-width: 1400px) {
-  .navigation__arrow {
+  .header .navigation__arrow {
     display: inline-block;
     margin-left: 11px;
     width: 8px;
@@ -121,12 +122,12 @@
   }
 }
 @media screen and (min-width: 1400px) {
-  .navigation.nav-list__item-selected {
+  .header .nav-list__item-selected {
     font-weight: 700;
   }
 }
 @media screen and (min-width: 1400px) {
-  .navigation:last-child {
+  .header:last-child {
     margin: 0;
   }
 }
