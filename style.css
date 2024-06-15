@@ -705,7 +705,7 @@
   flex-direction: column;
   align-items: center;
   padding: 0 15px;
-  padding-bottom: 45px;
+  padding-bottom: 43px;
   background-color: #f4f5f7;
 }
 @media screen and (min-width: 1400px) {
@@ -727,8 +727,8 @@
     margin-right: 121px;
     margin-top: 72px;
     margin-bottom: 72px;
-    width: 270px;
-    height: 297px;
+    max-width: 270px;
+    max-height: 297px;
   }
 }
 .order__details {
