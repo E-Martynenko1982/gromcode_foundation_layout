@@ -1,3 +1,7 @@
+@import "./media_breakpoints.scss";
+@import "./mixins.scss";
+@import "./variables.scss";
+
 .footer {
   display: flex;
   flex-direction: column;
@@ -186,15 +190,22 @@
   .logo-vertical__image {
     width: 60px;
     height: 60px;
+
+    @include desktop {
+      width: 60px;
+      height: 60px;
+    }
   }
 
   .logo-vertical__title {
-    margin-top: 20px;
-    font-weight: 700;
-    font-size: 20px;
-    line-height: 125%;
-    text-align: center;
-    color: $color-description;
+    @include desktop {
+      margin-top: 20px;
+      font-weight: 700;
+      font-size: 20px;
+      line-height: 125%;
+      text-align: center;
+      color: $color-description;
+    }
   }
 
   .logo-vertical__description {
