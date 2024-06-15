@@ -705,7 +705,7 @@
   flex-direction: column;
   align-items: center;
   padding: 0 15px;
-  padding-bottom: 43px;
+  padding-bottom: 45px;
   background-color: #f4f5f7;
 }
 @media screen and (min-width: 1400px) {
@@ -758,6 +758,11 @@
   letter-spacing: -0.01em;
   color: #2b292d;
   text-align: center;
+}
+@media screen and (min-width: 1400px) {
+  .order__title {
+    text-align: left;
+  }
 }
 .order__text {
   margin: 0;
@@ -816,7 +821,6 @@
   margin-top: 10px;
   margin-bottom: 0;
   width: 290px;
-  height: 44px;
   text-align: left;
   font-weight: 400;
   font-size: 14px;
@@ -826,6 +830,7 @@
 @media screen and (min-width: 1400px) {
   .order__terms {
     margin-top: 10px;
+    max-width: 555px;
   }
 }
 .order__terms-link {
