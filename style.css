@@ -719,6 +719,7 @@
 .order__illustration {
   margin-top: 55px;
   max-width: 200px;
+  max-height: 220px;
 }
 @media screen and (min-width: 1400px) {
   .order__illustration {
@@ -730,7 +731,6 @@
 }
 .order__details {
   margin-top: 40px;
-  margin-bottom: 45px;
   max-width: 555px;
 }
 @media screen and (min-width: 1400px) {
@@ -813,7 +813,7 @@
 }
 .order__terms {
   margin-top: 10px;
-  margin-bottom: 0;
+  margin-bottom: 43px;
   font-weight: 400;
   font-size: 14px;
   line-height: 157%;
