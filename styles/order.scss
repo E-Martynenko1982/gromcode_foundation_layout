@@ -23,8 +23,8 @@
       margin-right: 121px;
       margin-top: 72px;
       margin-bottom: 72px;
-      max-width: 270px;
-      max-height: 297px;
+      width: 270px;
+      height: 297px;
     }
   }
 
@@ -118,7 +118,7 @@
     font-weight: 400;
     font-size: 14px;
     line-height: 157%;
-    color: $color-description;
+    color: rgba(43, 41, 45, 0.6);
 
     @include desktop {
       margin-top: 10px;
