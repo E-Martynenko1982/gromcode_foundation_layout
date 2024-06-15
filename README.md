@@ -1,6 +1,6 @@
 Layout Sample Project
 
-https://e-martynenko1982.github.io/Gromecode_foundation_maket/
+https://e-martynenko1982.github.io/gromcode_foundation_layout/
 
 The tech stack is:
 
