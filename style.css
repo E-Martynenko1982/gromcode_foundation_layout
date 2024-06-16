@@ -987,6 +987,7 @@
 
 .footer-description {
   display: none;
+  margin: 0;
 }
 @media screen and (min-width: 1400px) {
   .footer-description {
@@ -1097,7 +1098,7 @@
   }
 }
 
-.logo-vertical__image {
+img.logo-vertical__image {
   width: 60px;
   height: 60px;
 }
