@@ -67,8 +67,10 @@
   line-height: 157%;
   opacity: 0.6;
   font-size: 14px;
+  margin-top: 22px;
 
   @include desktop {
+    margin-top: 0;
     line-height: 129%;
   }
 }
@@ -179,6 +181,14 @@
 .additional-navigation__column {
   margin-top: 30px;
 
+  @include desktop {
+    margin-top: 0;
+    margin-right: 29px;
+  }
+}
+
+.correct {
+  margin-top: 25px;
   @include desktop {
     margin-top: 0;
     margin-right: 29px;
