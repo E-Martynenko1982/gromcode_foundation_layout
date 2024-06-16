@@ -1118,6 +1118,7 @@ img.logo-vertical__image {
 .logo-vertical__description {
   font-weight: 400;
   font-size: 18px;
+  line-height: 125%;
   text-align: center;
   color: #2b292d;
   opacity: 0.6;
