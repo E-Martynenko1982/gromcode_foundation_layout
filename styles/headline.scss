@@ -1,6 +1,6 @@
 @import "./variables.scss";
-@import "./variables.scss";
-@import "./media_breakpoints.scss";
+@import "./common.scss";
+@import "./breakpoints.scss";
 
 .headline {
   width: 100%;
@@ -121,7 +121,7 @@
       width: 796px;
       height: 448px;
       right: 3px;
-      top: 8px;
+      top: 0px;
 
       width: 796px;
       height: 448px;

@@ -1,3 +1,27 @@
+@media screen and (min-width: 1400px) {
+  .hide_desktop {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 1399px) {
+  .hide_mobile {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 1400px) {
+  .hide_desktop {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 1399px) {
+  .hide_mobile {
+    display: none;
+  }
+}
+
 .header {
   display: flex;
   align-items: center;
@@ -20,13 +44,13 @@
 .header .logo {
   display: flex;
 }
-.header .logo-vertical__image {
+.header .logo__image {
   margin-right: 13px;
   width: 48px;
   height: 48px;
 }
 @media screen and (min-width: 1400px) {
-  .header .logo-vertical__image {
+  .header .logo__image {
     margin-right: 15px;
     width: 60px;
     height: 60px;
@@ -129,6 +153,18 @@
 @media screen and (min-width: 1400px) {
   .header:last-child {
     margin: 0;
+  }
+}
+
+@media screen and (min-width: 1400px) {
+  .hide_desktop {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 1399px) {
+  .hide_mobile {
+    display: none;
   }
 }
 
@@ -283,7 +319,7 @@
     width: 796px;
     height: 448px;
     right: 3px;
-    top: 8px;
+    top: 0px;
     width: 796px;
     height: 448px;
   }
@@ -524,6 +560,18 @@
   color: rgba(43, 41, 45, 0.6);
 }
 
+@media screen and (min-width: 1400px) {
+  .hide_desktop {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 1399px) {
+  .hide_mobile {
+    display: none;
+  }
+}
+
 .audience {
   display: flex;
   flex-direction: column;
@@ -704,6 +752,18 @@
   }
 }
 
+@media screen and (min-width: 1400px) {
+  .hide_desktop {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 1399px) {
+  .hide_mobile {
+    display: none;
+  }
+}
+
 .order {
   display: flex;
   flex-direction: column;
@@ -846,6 +906,18 @@
   color: #3142c6;
   text-decoration: underline;
   text-decoration-skip-ink: none;
+}
+
+@media screen and (min-width: 1400px) {
+  .hide_desktop {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 1399px) {
+  .hide_mobile {
+    display: none;
+  }
 }
 
 .footer {
@@ -1105,9 +1177,6 @@
   border-radius: 14px;
   width: 60px;
   height: 60px;
-  box-shadow: 0 4px 6px 0 rgba(0, 0, 0, 0.05);
-  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1);
-  background: linear-gradient(138deg, #3142c6 0%, #af61d1 100%);
 }
 
 .logo-vertical__text {

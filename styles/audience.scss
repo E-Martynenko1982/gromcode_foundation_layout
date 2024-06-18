@@ -1,6 +1,6 @@
-@import "./mixins.scss";
+@import "./common.scss";
 @import "./variables.scss";
-@import "./media_breakpoints.scss";
+@import "./breakpoints.scss";
 
 .audience {
   display: flex;

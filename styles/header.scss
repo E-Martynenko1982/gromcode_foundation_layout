@@ -1,6 +1,6 @@
 @import "./variables.scss";
-@import "./mixins.scss";
-@import "./media_breakpoints.scss";
+@import "./common.scss";
+@import "./breakpoints.scss";
 .header {
   display: flex;
   align-items: center;
@@ -24,7 +24,7 @@
     display: flex;
   }
 
-  .logo-vertical__image {
+  .logo__image {
     margin-right: 13px;
     width: 48px;
     height: 48px;
