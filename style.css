@@ -177,6 +177,7 @@
     position: relative;
     margin-top: 84px;
     margin-left: 130px;
+    height: 456px;
     width: 1245px;
   }
 }
@@ -319,7 +320,7 @@
     width: 796px;
     height: 448px;
     right: 3px;
-    top: 0px;
+    top: 8px;
     width: 796px;
     height: 448px;
   }
