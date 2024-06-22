@@ -1,17 +1,5 @@
 @import "./breakpoints.scss";
 
-.hide_desktop {
-  @include desktop {
-    display: none;
-  }
-}
-
-.hide_mobile {
-  @include smaller {
-    display: none;
-  }
-}
-
 @mixin custom-button {
   padding: auto;
   width: 160px;

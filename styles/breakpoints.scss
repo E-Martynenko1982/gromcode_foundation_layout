@@ -11,3 +11,15 @@ $breakpoint_desktop: 1400px;
     @content;
   }
 }
+
+.hide_desktop {
+  @include desktop {
+    display: none;
+  }
+}
+
+.hide_mobile {
+  @include smaller {
+    display: none;
+  }
+}

@@ -33,14 +33,13 @@ html {
     flex-direction: column;
     margin: auto;
     width: 1400px;
-
     min-height: 100vh;
   }
+
   .top-section {
     background-color: $color-background-main;
 
     @include desktop {
-      //padding-top: 39px;
       background-color: $color-background-main;
     }
   }

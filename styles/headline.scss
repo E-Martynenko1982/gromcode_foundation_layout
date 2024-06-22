@@ -8,9 +8,6 @@
   @include desktop {
     display: flex;
     position: relative;
-
-    // margin: auto;
-    // padding-bottom: 77px;
     margin-top: 84px;
     margin-left: 130px;
     height: 456px;
@@ -83,7 +80,7 @@
     }
   }
 
-  &__button-1 {
+  .headline__button-var {
     @include custom-button;
     width: 290px;
 
@@ -93,7 +90,7 @@
     }
   }
 
-  &__button {
+  .headline__button {
     @include custom-button;
 
     margin-top: 15px;
@@ -109,6 +106,7 @@
       color: $color-background-blue;
     }
   }
+
   &__banner {
     width: 100%;
     margin-bottom: 36px;

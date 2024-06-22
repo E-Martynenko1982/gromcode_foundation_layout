@@ -73,12 +73,12 @@
     margin-top: 0;
     line-height: 129%;
   }
-}
 
-.terms__items {
-  margin-right: 22px;
-  text-decoration: none;
-  color: $color-description;
+  &__items {
+    margin-right: 22px;
+    text-decoration: none;
+    color: $color-description;
+  }
 }
 
 .social-links {
@@ -89,49 +89,49 @@
     margin-left: auto;
     margin-bottom: 0;
   }
-}
 
-.social-links__items {
-  margin-left: 20px;
-}
+  &__items {
+    margin-left: 20px;
+  }
 
-.social-links__items:first-child {
-  margin-left: 0;
+  &__items:first-child {
+    margin-left: 0;
+  }
 }
 
 .logo {
   display: flex;
-}
 
-.logo__image {
-  margin-right: 13px;
-  width: 48px;
-  height: 48px;
+  &__image {
+    margin-right: 13px;
+    width: 48px;
+    height: 48px;
 
-  margin-right: 15px;
-  width: 60px;
-  height: 60px;
-}
+    margin-right: 15px;
+    width: 60px;
+    height: 60px;
+  }
 
-.logo__text {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
+  &__text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
 
-.logo__title {
-  font-size: 20px;
-  line-height: 125%;
-  font-weight: 700;
-}
+  &__title {
+    font-size: 20px;
+    line-height: 125%;
+    font-weight: 700;
+  }
 
-.logo__description {
-  display: block;
-  font-size: 18px;
-  line-height: 25px;
-  font-weight: 400;
-  opacity: 0.6;
-  color: $color-description;
+  &__description {
+    display: block;
+    font-size: 18px;
+    line-height: 25px;
+    font-weight: 400;
+    opacity: 0.6;
+    color: $color-description;
+  }
 }
 
 .footer-description {
@@ -159,10 +159,10 @@
     margin-top: 25px;
     justify-content: left;
   }
-}
 
-.downloads__item {
-  margin-right: 10px;
+  &__item {
+    margin-right: 10px;
+  }
 }
 
 .additional-navigation {
@@ -177,14 +177,13 @@
     margin-top: 60px;
     margin-left: auto;
   }
-}
+  &__column {
+    margin-top: 30px;
 
-.additional-navigation__column {
-  margin-top: 30px;
-
-  @include desktop {
-    margin-top: 0;
-    margin-right: 29px;
+    @include desktop {
+      margin-top: 0;
+      margin-right: 29px;
+    }
   }
 }
 
@@ -198,34 +197,34 @@
 
 .nav-links {
   width: 265px;
-}
 
-.nav-links__title {
-  margin: 0;
-  font-weight: 700;
-  font-size: 22px;
-  line-height: 127%;
-  color: $color-description;
-}
+  &__title {
+    margin: 0;
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 127%;
+    color: $color-description;
+  }
 
-.nav-links__list {
-  display: flex;
-  flex-direction: column;
-  gap: 6px;
-  padding: 0;
-  margin: 0;
-  margin-top: 18px;
+  &__list {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    padding: 0;
+    margin: 0;
+    margin-top: 18px;
 
-  opacity: 0.6;
-  list-style-type: none;
-}
+    opacity: 0.6;
+    list-style-type: none;
+  }
 
-.nav-links__list-item {
-  font-weight: 400;
-  font-size: 18px;
-  line-height: 30px;
+  &__list-item {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 30px;
 
-  color: $color-description;
+    color: $color-description;
+  }
 }
 
 .footer .logo {
@@ -233,8 +232,6 @@
     display: none;
   }
 }
-
-// logo vertical
 
 .logo-vertical {
   display: flex;
@@ -244,33 +241,33 @@
   @include desktop {
     display: none;
   }
-}
 
-.logo-vertical__image {
-  border-radius: 14px;
-  width: 60px;
-  height: 60px;
-}
+  logo-vertical__image {
+    border-radius: 14px;
+    width: 60px;
+    height: 60px;
+  }
 
-.logo-vertical__text {
-  margin-top: 20px;
-}
+  &__text {
+    margin-top: 20px;
+  }
 
-.logo-vertical__title {
-  font-weight: 700;
-  font-size: 20px;
-  line-height: 125%;
-  text-align: center;
-  color: $color-description;
-}
+  &__title {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 125%;
+    text-align: center;
+    color: $color-description;
+  }
 
-.logo-vertical__description {
-  font-weight: 400;
-  font-size: 18px;
-  line-height: 125%;
-  text-align: center;
-  color: $color-description;
-  opacity: 0.6;
+  &__description {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 125%;
+    text-align: center;
+    color: $color-description;
+    opacity: 0.6;
+  }
 }
 
 .hide_desktop {

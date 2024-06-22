@@ -11,54 +11,54 @@
   .tip {
     padding: 40px 15px 0 15px;
     border-bottom: 1px solid $customers-border-color;
-  }
 
-  .tip__decoration {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin: 0;
-    margin-bottom: 40px;
-  }
+    &__decoration {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin: 0;
+      margin-bottom: 40px;
+    }
 
-  .tip__subtitle {
-    font-weight: 700;
-    font-size: 22px;
-    line-height: 155%;
-    color: $color-features-subtitle;
-  }
+    &__subtitle {
+      font-weight: 700;
+      font-size: 22px;
+      line-height: 155%;
+      color: $color-features-subtitle;
+    }
 
-  .tip__title {
-    margin: 0;
-    margin-top: 17px;
-    font-weight: 700;
-    font-size: 40px;
-    line-height: 100%;
-    letter-spacing: -0.01em;
-    color: $color-description;
-  }
+    &__title {
+      margin: 0;
+      margin-top: 17px;
+      font-weight: 700;
+      font-size: 40px;
+      line-height: 100%;
+      letter-spacing: -0.01em;
+      color: $color-description;
+    }
 
-  .tip__description {
-    margin: 0;
-    margin-top: 13px;
-    font-weight: 400;
-    font-size: 24px;
-    line-height: 142%;
-    text-align: center;
-    color: $color-description;
-  }
+    &__description {
+      margin: 0;
+      margin-top: 13px;
+      font-weight: 400;
+      font-size: 24px;
+      line-height: 142%;
+      text-align: center;
+      color: $color-description;
+    }
 
-  .tip__image {
-    margin-top: 29px;
-  }
+    &__image {
+      margin-top: 29px;
+    }
 
-  .tip__image-caption {
-    margin-top: 20px;
-    max-width: 100%;
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 157%;
-    text-align: center;
-    color: rgba(43, 41, 45, 0.6);
+    .tip__image-caption {
+      margin-top: 20px;
+      max-width: 100%;
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 157%;
+      text-align: center;
+      color: rgba(43, 41, 45, 0.6);
+    }
   }
 }

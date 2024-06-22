@@ -1,6 +1,7 @@
 @import "./variables.scss";
 @import "./common.scss";
 @import "./breakpoints.scss";
+
 .header {
   display: flex;
   align-items: center;
@@ -22,42 +23,41 @@
 
   .logo {
     display: flex;
-  }
+    &__image {
+      margin-right: 13px;
+      width: 48px;
+      height: 48px;
 
-  .logo__image {
-    margin-right: 13px;
-    width: 48px;
-    height: 48px;
-
-    @include desktop {
-      margin-right: 15px;
-      width: 60px;
-      height: 60px;
+      @include desktop {
+        margin-right: 15px;
+        width: 60px;
+        height: 60px;
+      }
     }
-  }
 
-  .logo__text {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-  }
+    &__text {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
 
-  .logo__name {
-    font-size: 20px;
-    line-height: 25px;
-    font-weight: 700;
-  }
-
-  .logo__description {
-    display: none;
-
-    @include desktop {
-      display: block;
-      font-size: 18px;
+    &__name {
+      font-size: 20px;
       line-height: 25px;
-      font-weight: 400;
-      opacity: 0.6;
-      color: $color-description;
+      font-weight: 700;
+    }
+
+    &__description {
+      display: none;
+
+      @include desktop {
+        display: block;
+        font-size: 18px;
+        line-height: 25px;
+        font-weight: 400;
+        opacity: 0.6;
+        color: $color-description;
+      }
     }
   }
 
@@ -102,26 +102,27 @@
       margin-left: auto;
       // margin-right: 75px;
     }
-  }
-  .navigation__item {
-    @include desktop {
-      margin-right: 50px;
-      color: $color-description;
-      text-decoration: none;
-      line-height: 25px;
-      font-size: 18px;
+    &__item {
+      @include desktop {
+        margin-right: 50px;
+        color: $color-description;
+        text-decoration: none;
+        line-height: 25px;
+        font-size: 18px;
+      }
+    }
+
+    &__arrow {
+      @include desktop {
+        display: inline-block;
+        margin-left: 11px;
+        width: 8px;
+        height: 5px;
+        background-image: url("https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson24/hw1/arrow.png");
+      }
     }
   }
 
-  .navigation__arrow {
-    @include desktop {
-      display: inline-block;
-      margin-left: 11px;
-      width: 8px;
-      height: 5px;
-      background-image: url("https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson24/hw1/arrow.png");
-    }
-  }
   .nav-list__item-selected {
     @include desktop {
       font-weight: 700;
