@@ -3,26 +3,26 @@
 @import "./breakpoints.scss";
 
 .header {
-  display: flex;
-  align-items: center;
   padding-left: 15px;
   margin: auto;
+  display: flex;
+  align-items: center;
   height: 64px;
   width: 100%;
   background-color: $background-color-header-mobile;
 
   @include desktop {
-    align-items: flex-start;
     margin-top: 39px;
     padding-left: 0;
+    align-items: flex-start;
     width: 1140px;
     height: 62px;
-
     background-color: $color-background-main;
   }
 
   .logo {
     display: flex;
+
     &__image {
       margin-right: 13px;
       width: 48px;
@@ -55,8 +55,8 @@
         font-size: 18px;
         line-height: 25px;
         font-weight: 400;
-        opacity: 0.6;
         color: $color-description;
+        opacity: 0.6;
       }
     }
   }
@@ -73,12 +73,11 @@
   }
 
   &__menu-button {
-    height: 100%;
     margin-left: auto;
+    height: 100%;
     width: 58px;
     border: none;
     border-left: 1px solid #00000026;
-
     background: transparent;
 
     @include desktop {
@@ -97,25 +96,25 @@
     display: none;
 
     @include desktop {
-      display: block;
       margin-top: 7px;
       margin-left: auto;
-      // margin-right: 75px;
+      display: block;
     }
+
     &__item {
       @include desktop {
         margin-right: 50px;
-        color: $color-description;
-        text-decoration: none;
         line-height: 25px;
         font-size: 18px;
+        color: $color-description;
+        text-decoration: none;
       }
     }
 
     &__arrow {
       @include desktop {
-        display: inline-block;
         margin-left: 11px;
+        display: inline-block;
         width: 8px;
         height: 5px;
         background-image: url("https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson24/hw1/arrow.png");

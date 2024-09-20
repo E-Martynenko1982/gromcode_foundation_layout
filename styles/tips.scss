@@ -13,11 +13,11 @@
     border-bottom: 1px solid $customers-border-color;
 
     &__decoration {
+      margin: 0;
+      margin-bottom: 40px;
       display: flex;
       flex-direction: column;
       align-items: center;
-      margin: 0;
-      margin-bottom: 40px;
     }
 
     &__subtitle {

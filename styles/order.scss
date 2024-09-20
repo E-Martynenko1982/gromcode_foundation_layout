@@ -16,7 +16,6 @@
     align-items: flex-start;
 
     max-height: 827px;
-    //padding: 73px 0 72px 0;
   }
   &__illustration {
     margin-top: 50px;
@@ -120,12 +119,11 @@
     margin-top: 12px;
     margin-bottom: 0;
     width: 290px;
-
-    text-align: left;
     font-weight: 400;
     font-size: 14px;
     line-height: 157%;
     color: rgba(43, 41, 45, 0.6);
+    text-align: left;
 
     @include desktop {
       margin-top: 10px;

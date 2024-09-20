@@ -29,9 +29,9 @@ html {
   width: 100%;
 
   @include desktop {
+    margin: auto;
     display: flex;
     flex-direction: column;
-    margin: auto;
     width: 1400px;
     min-height: 100vh;
   }
