@@ -78,29 +78,24 @@
       margin-top: 58px;
       display: flex;
     }
-  }
 
-  .headline__button-var {
-    @include custom-button;
-
-    @include desktop {
+    .headline__button {
       @include custom-button;
-      margin-right: 10px;
-    }
-  }
+      margin-top: 15px;
+      width: 290px;
 
-  .headline__button {
-    @include custom-button;
-    margin-top: 15px;
-    width: 290px;
-    background-color: $color-text-white;
-    color: $color-background-blue;
+      @include desktop {
+        @include custom-button;
+        margin-right: 10px;
+      }
 
-    @include desktop {
-      @include custom-button;
-      margin-top: 0;
-      background-color: $color-text-white;
-      color: $color-background-blue;
+      &:first-child {
+      }
+
+      &:nth-child(2) {
+        background-color: $color-text-white;
+        color: $color-background-blue;
+      }
     }
   }
 
