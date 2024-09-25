@@ -300,6 +300,7 @@
   }
 }
 .headline__actions .headline__button:nth-child(2) {
+  margin-bottom: 0;
   background-color: #ffffff;
   color: #3040c4;
 }
