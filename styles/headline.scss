@@ -83,16 +83,16 @@
 
     .headline__button {
       @include custom-button;
-
       width: 290px;
+      margin-bottom: 15px;
 
       @include desktop {
         @include custom-button;
+
         margin-right: 10px;
       }
 
       &:nth-child(2) {
-        margin-top: 15px;
         background-color: $color-text-white;
         color: $color-background-blue;
       }
