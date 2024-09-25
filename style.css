@@ -263,8 +263,6 @@
 }
 .headline__actions {
   margin-top: 32px;
-  margin-left: 15px;
-  margin-right: 15px;
 }
 @media screen and (min-width: 1400px) {
   .headline__actions {
